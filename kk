@@ -14,7 +14,7 @@ pipeline
             {
                steps
                 {
-                  sh 'mvn package'
+                  sh label: '', script: 'mvn package'
                 }
             }
             stage('continuousdeployment')
